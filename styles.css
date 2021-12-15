@@ -1,13 +1,16 @@
-body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+   body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    ;
   }
   
   h1 {
-    color: #7c7c7c;
+    color: #5b20fc;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
-    margin: 0;
+    margin-bottom: 0;
   }
   
   ul {
@@ -16,7 +19,7 @@ body {
   }
   
   li {
-    color: #96a366;
+    color: #660066;
     font-size: 23px;
     font-weight: 600;
     height: 19px;
@@ -25,29 +28,30 @@ body {
   }
   
   .weather-app {
-    border: 1px solid #55814f;
+    border: 2px groove #1f2d7e , #5a4f81;
     padding: 15px;
     margin: 20px auto;
     border-radius: 10px;
     max-width: 700px;
   }
   .weather-app:hover {
-    background-color: rgba(243, 239, 201, 0.384);
+    border-color: rgba(201, 240, 243, 0.384);
   }
   .weather-icon {
     height: 64px;
-    color: rgba(99, 91, 25, 0.808);
+    color: rgba(32, 25, 99, 0.808);
     width: 69px;
     margin-right: 10px;
   }
   
   .temperature {
-    color: rgba(99, 91, 25, 0.808);
+    color: rgba(41, 25, 99, 0.808);
     font-size: 100px;
     font-weight: bold;
     line-height: 2.6;
     padding: 0px;
     margin: 10px;
+    cursor: default;
   }
   
   .units {
@@ -58,28 +62,37 @@ body {
   .search-form {
     margin-bottom: 20px;
   }
-  #city-input:hover {
-    background-color: #fafad2be;
+  #city-input {
+  border-color: #660066;
+  cursor: text;
+  background-color: #05173d07;
+  color: #05173d;
   }
   .btn {
-    background-color: #477c0be0;
+    background-color: #1b25a7e0;
     border-radius: 16px;
-    border-color: #2f5207e0;
+    border-color: #0c0336e0;
+    cursor: grab;
   }
   .bg-light {
     border-radius: 10px;
-    background-color: #8b9436e8;
-    text-shadow: #96a366;
-    border-color: #193d05;
+    background-color: #943655e8;
+    text-shadow: #6667a3;
+    border-color: #05173d;
   }
   #humidity {
     font-size: 34px;
     padding: 0px;
     margin: 10px;
+    cursor: default ;
   }
   .btn:hover {
-    background-color: #193d05;
-    border-radius: 16px;
-    border-color: #2f5207e0;
+    background-color: #19053d;
+    border-radius: 19px;
+    border-color: #0c0752e0;
   }
+  
+body:hover{
+    background: linear-gradient(68.6deg, rgb(165, 220, 252) 1.8%, rgb(216, 181, 255) 100.5%);  
+}
   
