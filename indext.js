@@ -88,4 +88,11 @@ function formatDate(date) {
   currentLocationButton.addEventListener("click", getCurrentLocation);
   
   searchCity("New York");
-  
+  function setIcons(icon, iconID){
+const skycons = new Skycons({color:"blue"});
+const currentIcon = icon.replace(/-/g,"_").toUpperCase();
+skycons.play();
+return skycons.set(iconID,Skycons[currentIcon]);
+setIcon(icon, document.querySelector(".icon"));
+  } 
+  setIcons();
