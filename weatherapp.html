@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="clear"
+            id="icon" class="float-left"
+            />
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <br>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 border bg-light " id="sun">Sunday,Today:⛈️;71℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Monday:🌨️;24℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Tuesday:🌨️;58℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light"> Wednesday:🌧️;62℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Thursday:⛈️;56℉</div>
+        </div>
+    <br><br>
+        <div class="col">
+          <div class="p-3 border bg-light">Friday:🌨️;45℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Saturday:🌨️;23℉</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Sunday:🌧️;59℉</div>
+        </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>
+    <script src="indext.js"></script>
+  </body>
+</html>
