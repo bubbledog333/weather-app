@@ -93,7 +93,7 @@ lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
 console.log(apiUrlForecast)
 } console.log(navigator.geolocation.getCurrentPosition)
 function displayForecast(){
-console.log(response.data.daily);
+let forecast = response.data.daily;
 let forecastElement = document.querySelector("#id")
 axios.get(apiUrl).then(displayForecast);
 getforecast(response.data.coord)
