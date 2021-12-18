@@ -95,5 +95,5 @@ console.log(apiUrlForecast)
 function displayForecast(){
 console.log(response.data.daily);
 let forecastElement = document.querySelector("#id")
-
+axios.get(apiUrl).then(displayForecast);
 }
