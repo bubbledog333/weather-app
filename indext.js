@@ -93,7 +93,7 @@ lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
 console.log(apiUrlForecast)
 } console.log(navigator.geolocation.getCurrentPosition)
 function displayForecast(){
-console.log(response.data);
-let forecastElement = document.querySelector("#forcast")
+console.log(response.data.daily);
+let forecastElement = document.querySelector("#id")
 
 }
