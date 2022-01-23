@@ -11,7 +11,15 @@
 		},
 		{
 			"path": "..\\weather3333"
+		},
+		{
+			"path": "..\\weatherFINAL-PROJECT"
+		},
+		{
+			"path": "..\\test"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test"
+	}
 }
